@@ -97,6 +97,10 @@ const projectsData = {
         "assets/projects/weather_app/screenshot-2.png",
         "assets/projects/weather_app/screenshot-3.png",
         "assets/projects/weather_app/screenshot-4.png",
+        "assets/projects/weather_app/screenshot-5.png",
+        "assets/projects/weather_app/screenshot-6.png",
+        "assets/projects/weather_app/screenshot-7.png",
+        "assets/projects/weather_app/screenshot-8.png",
       ],
       video: {
         poster: "assets/projects/weather_app/demo-poster.png",
