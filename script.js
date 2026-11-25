@@ -305,8 +305,13 @@
       }
 
       const name = form.querySelector('#name').value.trim();
-      if (note) note.textContent = `Thanks, ${name}! This form isn't wired to a backend yet — reach out via email or LinkedIn for now.`;
-      form.reset();
+      const email = form.querySelector('#email').value.trim();
+      const message = form.querySelector('#message').value.trim();
+      const subject = encodeURIComponent(`Portfolio message from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+
+      if (note) note.textContent = 'Your email app will open with the message ready to send.';
+      window.location.href = `mailto:yousseftarekx2@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 

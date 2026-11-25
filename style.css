@@ -25,19 +25,19 @@
 /* ============ 1. DESIGN TOKENS ============ */
 :root {
   /* Brand palette */
-  --primary: #4F46E5;
-  --primary-light: #6366F1;
-  --secondary: #7C3AED;
-  --accent: #60A5FA;
-  --code-accent: #34D399;
+  --primary: #6D5DFB;
+  --primary-light: #8B7CFF;
+  --secondary: #16B8A6;
+  --accent: #5EEAD4;
+  --code-accent: #A3E635;
 
   /* Dark theme surface */
-  --bg: #0F172A;
-  --bg-elevated: #131B33;
+  --bg: #0A1020;
+  --bg-elevated: #0E172A;
   --bg-card: rgba(255, 255, 255, 0.045);
   --bg-card-hover: rgba(255, 255, 255, 0.075);
-  --border-soft: rgba(255, 255, 255, 0.09);
-  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-soft: rgba(148, 163, 184, 0.13);
+  --border-strong: rgba(94, 234, 212, 0.36);
 
   --text: #E7ECF7;
   --text-dim: #9AA6C3;
@@ -51,7 +51,7 @@
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
-  --shadow-glow: 0 20px 60px -20px rgba(79, 70, 229, 0.45);
+  --shadow-glow: 0 20px 70px -24px rgba(22, 184, 166, 0.55);
   --shadow-soft: 0 10px 30px -12px rgba(0, 0, 0, 0.45);
 
   /* Motion */
@@ -283,6 +283,35 @@ input, textarea { font-family: inherit; }
   transition: border-color var(--dur-fast), background var(--dur-fast);
 }
 .theme-toggle:hover { border-color: var(--border-strong); }
+[dir="rtl"] body { font-family: 'Poppins', 'Tahoma', sans-serif; }
+[dir="rtl"] .hero__grid, [dir="rtl"] .about__grid, [dir="rtl"] .contact__grid { text-align: right; }
+[dir="rtl"] .project-card__actions { direction: rtl; }
+.hero__visual { perspective: 1100px; }
+.hero { isolation: isolate; }
+.hero::after {
+  content: ''; position: absolute; z-index: -1; width: min(52vw, 680px); aspect-ratio: 1;
+  right: -12%; top: 5%; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(22,184,166,.12), rgba(109,93,251,.08) 42%, transparent 70%);
+  filter: blur(18px); animation: orbBreath 9s ease-in-out infinite alternate;
+}
+.hero__visual { transform-style: preserve-3d; }
+.device { transform: rotateY(-10deg) rotateX(4deg) translateZ(18px); transition: transform .8s var(--ease); box-shadow: 22px 28px 70px rgba(0,0,0,.28); }
+.hero__visual:hover .device { transform: rotateY(-3deg) rotateX(0) translateY(-7px) translateZ(28px); }
+.code-card { transform: rotateY(8deg) rotateX(2deg) translateZ(40px); transition: transform .7s var(--ease); }
+.hero__visual:hover .code-card { transform: rotateY(2deg) translateY(-5px) translateZ(52px); }
+.project-card, .service-card, .skill-group, .panel-card { transform-style: preserve-3d; }
+.project-card:hover { transform: translateY(-7px) rotateX(1deg); }
+.project-card__body { transform: translateZ(8px); }
+.project-card:nth-child(4n+1) { background-image: radial-gradient(ellipse at 100% 0%, rgba(109,93,251,.11), transparent 48%); }
+.project-card:nth-child(4n+2) { background-image: radial-gradient(ellipse at 100% 0%, rgba(22,184,166,.10), transparent 48%); }
+.project-card:nth-child(4n+3) { background-image: radial-gradient(ellipse at 100% 0%, rgba(94,234,212,.08), transparent 48%); }
+.blob { animation: floatGlow 12s ease-in-out infinite alternate; }
+.blob--2 { animation-delay: -5s; }
+.section--alt { background-image: linear-gradient(135deg, rgba(109,93,251,.025), transparent 55%, rgba(22,184,166,.025)); }
+.btn { box-shadow: 0 8px 26px rgba(22,184,166,.12); transition: transform var(--dur-med) var(--ease), box-shadow var(--dur-med) var(--ease), background var(--dur-med) var(--ease); }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(22,184,166,.22); }
+@keyframes floatGlow { from { transform: translate3d(0,0,0) scale(1); } to { transform: translate3d(14px,-18px,0) scale(1.06); } }
+@keyframes orbBreath { from { opacity:.55; transform: scale(.92) translateY(0); } to { opacity:1; transform: scale(1.08) translateY(-16px); } }
 .theme-toggle .icon { width: 18px; height: 18px; position: absolute; transition: opacity .3s ease, transform .4s var(--ease); }
 .icon-moon { opacity: 1; transform: scale(1) rotate(0); }
 .icon-sun { opacity: 0; transform: scale(.4) rotate(-90deg); }
@@ -931,6 +960,14 @@ input, textarea { font-family: inherit; }
   object-fit: cover;
   object-position: center;
   opacity: .75;
+}
+
+.video-placeholder video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
 }
 
 .video-placeholder__play {

@@ -27,16 +27,16 @@ const projectsData = {
   completed: [
     {
       slug: "task-app",
-      title: "Task App",
+      title: "TaskFlow — To-Do List App",
       shortDescription:
         "A productivity-focused Flutter application for organizing tasks, tracking daily progress and staying on top of a home dashboard.",
       status: "Completed",
       technologies: ["Flutter", "Dart", "BLoC / Cubit", "GoRouter"],
       githubUrl: "https://github.com/yousseftarekx2-tech/TaskFlow",
       detailsUrl: "projects/task-app.html",
-      heroImage: "assets/projects/task_app/hero.png",
+      heroImage: "assets/images/hero.png",
       overview:
-        "Task App is a productivity-focused Flutter application designed to help users organize tasks and monitor their daily progress through a clean home dashboard.",
+        "TaskFlow is a productivity-focused Flutter application for organizing tasks, tracking daily progress, and managing routines from a focused home dashboard.",
       problem:
         "Keeping track of daily tasks across scattered notes and apps makes it hard to see real progress or stay consistent with a routine.",
       solution:
@@ -49,13 +49,17 @@ const projectsData = {
         "Reusable, componentized widget structure",
       ],
       screenshots: [
-        "assets/projects/task_app/screenshot-1.png",
-        "assets/projects/task_app/screenshot-2.png",
-        "assets/projects/task_app/screenshot-3.png",
-        "assets/projects/task_app/screenshot-4.png",
+        "assets/images/screen_1.png",
+        "assets/images/screen_2.png",
+        "assets/images/screen_3.png",
+        "assets/images/screen_4.png",
+        "assets/images/screen_5.png",
+        "assets/images/screen_6.png",
+        "assets/images/screen_7.png",
+        "assets/images/screen_8.png",
       ],
       video: {
-        poster: "assets/projects/task_app/demo-poster.png",
+        poster: "assets/images/screen_1.png",
         src: "assets/projects/task_app/demo.mp4",
       },
       technicalHighlights: [
@@ -76,9 +80,9 @@ const projectsData = {
         "A Flutter weather app that fetches live forecasts through a REST API and keeps working with cached data when the connection drops.",
       status: "Completed",
       technologies: ["Flutter", "Dart", "REST API", "Dio"],
-      githubUrl: null, // TODO: add the real repo URL here — no placeholder link used
+      githubUrl: "https://github.com/yousseftarekx2-tech/weather_app",
       detailsUrl: "projects/weather-app.html",
-      heroImage: "assets/projects/weather_app/hero.png",
+      heroImage: "assets/projects/weather_app/hero.jpg",
       overview:
         "Weather App is a Flutter application that retrieves live weather data through a REST API and presents current conditions and forecasts in a clean, responsive interface.",
       problem:
@@ -93,19 +97,16 @@ const projectsData = {
         "Localized date, time and unit formatting",
       ],
       screenshots: [
-        "assets/projects/weather_app/screenshot-1.png",
-        "assets/projects/weather_app/screenshot-2.png",
-        "assets/projects/weather_app/screenshot-3.png",
-        "assets/projects/weather_app/screenshot-4.png",
-        "assets/projects/weather_app/screenshot-5.png",
-        "assets/projects/weather_app/screenshot-6.png",
-        "assets/projects/weather_app/screenshot-7.png",
-        "assets/projects/weather_app/screenshot-8.png",
+        "assets/projects/weather_app/screen_1.png",
+        "assets/projects/weather_app/screen_2.png",
+        "assets/projects/weather_app/screen_3.png",
+        "assets/projects/weather_app/screen_4.png",
+        "assets/projects/weather_app/screen_5.png",
+        "assets/projects/weather_app/screen_6.png",
+        "assets/projects/weather_app/screen_7.png",
+        "assets/projects/weather_app/screen_8.png",
       ],
-      video: {
-        poster: "assets/projects/weather_app/demo-poster.png",
-        src: "assets/projects/weather_app/demo.mp4",
-      },
+      video: null,
       technicalHighlights: [
         "Flutter",
         "Dart",
@@ -118,26 +119,43 @@ const projectsData = {
         "Responsive UI",
       ],
     },
-  ],
-
-  inProgress: [
     {
-      slug: "personal-finance-app",
-      title: "Personal Finance App",
+      slug: "atelier-ecommerce-customer-app",
+      title: "Atelier E-commerce App",
       shortDescription:
-        "A personal finance mobile application for tracking income, expenses, categories, budgets, and financial insights.",
-      status: "In Progress",
-      technologies: ["Flutter", "Dart", "BLoC / Cubit", "GoRouter", "Local Database", "FL Chart"],
-      githubUrl: null,
+        "A Flutter customer shopping app with product discovery, cart and favorites, account features, and a Supabase-backed architecture.",
+      status: "Completed",
+      technologies: ["Flutter", "Dart", "BLoC / Cubit", "Supabase", "GoRouter"],
+      githubUrl: "https://github.com/yousseftarekx2-tech/atelier-ecommerce-customer-app",
+      detailsUrl: null,
+      heroImage: null,
+      overview:
+        "Atelier is a customer-facing e-commerce application built with Flutter, with Supabase-backed services and feature-based app architecture.",
+      problem: "Online shoppers need a clear way to browse products and manage their shopping activity in one place.",
+      solution: "A mobile shopping experience organized around products, favorites, cart, account, and related customer features.",
+      features: ["Product discovery", "Shopping cart", "Favorites", "Customer accounts", "Supabase integration"],
+      screenshots: [],
+      video: null,
+      technicalHighlights: ["Flutter", "Dart", "BLoC / Cubit", "Supabase", "GoRouter"],
     },
     {
-      slug: "medical-prescription-app",
-      title: "Medical Prescription / Medicine App",
+      slug: "rick-and-morty-explorer",
+      title: "Rick & Morty Explorer",
       shortDescription:
-        "A mobile application concept for scanning medical prescriptions or medicine packages, extracting relevant information, and retrieving structured data through APIs.",
-      status: "In Progress",
-      technologies: ["Flutter", "Dart", "API Integration", "Image Processing", "QR / OCR"],
-      githubUrl: null,
+        "Explore characters, locations, and episodes with paginated API data, search, combined filters, and detailed character profiles.",
+      status: "Completed",
+      technologies: ["Flutter", "Dart", "REST API", "BLoC / Cubit"],
+      githubUrl: "https://github.com/yousseftarekx2-tech/rick-and-morty-explorer",
+      detailsUrl: null,
+      heroImage: null,
+      overview:
+        "A responsive Flutter app for exploring the Rick and Morty universe using the Rick and Morty API.",
+      problem: "Exploring a large character catalog works best when users can progressively load, search, and filter the content.",
+      solution: "An API-powered explorer with pagination, combined search and filters, character profiles, and on-demand episode information.",
+      features: ["Paginated character explorer", "Search and combined filters", "Character detail profiles", "Episode information", "Responsive layouts"],
+      screenshots: [],
+      video: null,
+      technicalHighlights: ["Flutter", "Dart", "REST API", "BLoC / Cubit", "Repository Architecture"],
     },
   ],
 };
