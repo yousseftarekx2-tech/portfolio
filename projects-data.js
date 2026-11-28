@@ -27,16 +27,16 @@ const projectsData = {
   completed: [
     {
       slug: "task-app",
-      title: "TaskFlow — To-Do List App",
+      title: "Momentum — To-Do List App",
       shortDescription:
         "A productivity-focused Flutter application for organizing tasks, tracking daily progress and staying on top of a home dashboard.",
       status: "Completed",
       technologies: ["Flutter", "Dart", "BLoC / Cubit", "GoRouter"],
-      githubUrl: "https://github.com/yousseftarekx2-tech/TaskFlow",
+      githubUrl: "https://github.com/yousseftarekx2-tech/Momentum",
       detailsUrl: "projects/task-app.html",
       heroImage: "assets/images/hero.png",
       overview:
-        "TaskFlow is a productivity-focused Flutter application for organizing tasks, tracking daily progress, and managing routines from a focused home dashboard.",
+        "Momentum is a productivity-focused Flutter application for organizing tasks, tracking daily progress, and managing routines from a focused home dashboard.",
       problem:
         "Keeping track of daily tasks across scattered notes and apps makes it hard to see real progress or stay consistent with a routine.",
       solution:
@@ -75,16 +75,16 @@ const projectsData = {
     },
     {
       slug: "weather-app",
-      title: "Weather App",
+      title: "Skycast",
       shortDescription:
         "A Flutter weather app that fetches live forecasts through a REST API and keeps working with cached data when the connection drops.",
       status: "Completed",
       technologies: ["Flutter", "Dart", "REST API", "Dio"],
-      githubUrl: "https://github.com/yousseftarekx2-tech/weather_app",
+      githubUrl: "https://github.com/yousseftarekx2-tech/Skycast",
       detailsUrl: "projects/weather-app.html",
       heroImage: "assets/projects/weather_app/hero.jpg",
       overview:
-        "Weather App is a Flutter application that retrieves live weather data through a REST API and presents current conditions and forecasts in a clean, responsive interface.",
+        "Skycast is a Flutter application that retrieves live weather data through a REST API and presents current conditions and forecasts in a clean, responsive interface.",
       problem:
         "Weather apps often feel cluttered, or stop being useful the moment a connection drops, leaving users without any information at all.",
       solution:
